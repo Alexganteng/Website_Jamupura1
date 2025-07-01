@@ -1,0 +1,133 @@
+.main1 {
+    display: flex;
+    background-color: #A9A9A9;
+    padding: 60px 30px;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.content1 {
+    flex: 1;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.content1 h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #2F2F2F;
+}
+
+.content1 p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #2F2F2F;
+    text-align: justify;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 700px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Tombol */
+.button {
+    background-color: #89a867;
+    color: #ffffff;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #9caf8886;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+/* Responsif */
+@media (max-width: 1024px) {
+    .main1 {
+        flex-direction: column-reverse;
+        padding: 40px 20px;
+    }
+
+    .content1, .image-container {
+        max-width: 100%;
+    }
+
+    .content1 h2 {
+        font-size: 28px;
+    }
+
+    .content1 p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content1 h2 {
+        font-size: 24px;
+    }
+
+    .content1 p {
+        font-size: 14px;
+    }
+
+    .button {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .image-container img {
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main1 {
+        padding: 30px 10px;
+    }
+
+    .content1 h2 {
+        font-size: 22px;
+    }
+
+    .content1 p {
+        font-size: 13px;
+    }
+
+    .button {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+
+    .image-container img {
+        border-radius: 12px;
+    }
+}

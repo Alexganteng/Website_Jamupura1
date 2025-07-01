@@ -1,0 +1,255 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Produk Kami</title>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="tampilanproduk.css ">
+  <link rel="stylesheet" href="../chatbot.css">
+</head>
+<body>
+
+
+  <div class="navbar">
+    <div class="navbar-left">
+      
+    </div>
+  
+    <div class="navbar-right">
+      <a href="../pembayaran/pembayaran.php" class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cart-count">0</span>
+      </a>
+    </div>
+  </div>
+  
+       <div class="main-content">
+        <h1>
+         Dapatkan ramuan herbal terbaik
+        
+        
+        </h1>
+        <span>
+          untuk kesehatanmu
+         </span>
+       </div>
+
+
+
+       <div id="logoContainer">
+        <img src="../logo3.jpg" alt="Chatbot Logo" id="chatLogo" />
+      </div>
+  
+      <!-- Chatbox yang disembunyikan secara default -->
+      <div class="chat-box" id="chatBox"></div>
+  
+      <div class="chat-container">
+        <div class="chat-input hidden" id="chatInput">
+          <input id="userInput" placeholder="Tuliskan Pesan" type="text" />
+          <div class="send-button" onclick="sendMessage()">
+            <i class="fas fa-paper-plane"></i>
+          </div>
+        </div>
+      </div>
+
+
+
+        <div class="image-grid" data-aos="fade-up">
+            <img alt="" height="300" src="pemanis/pemanis2.jpg" width="200"/>
+            <img alt="" height="300" src="pemanis/pemanis3.jpg" width="200"/>
+            <img alt="" height="300" src="pemanis/pemanis4.jpg" width="200"/>
+            <img alt="" height="300" src="pemanis/pemanis5.jpg" width="200"/>
+         <img alt="" height="300" src="pemanis/pemanis6.jpg" width="200"/>
+         <img alt="" height="300" src="pemanis/pemanis7.jpg" width="200"/>
+         <img alt="" height="300" src="pemanis/pemanis8.jpg"width="200"/>
+         <img alt="" height="300" src="pemanis/pemanis9.jpg" width="200"/>
+         <img alt="" height="300" src="pemanis/pemanis10.jpg" width="200"/>
+         <img alt="" height="300" src="pemanis/pemanis11.jpg"width="200"/>
+        </div>
+       </div>
+       <div class="footer1"1 data-aos="fade-up">
+        <a href="#Makananringan">
+         Here's you can see
+         <i class="fas fa-chevron-down">
+         </i>
+        </a>
+       </div>
+  
+                <!-- Makanan Berat -->
+
+
+       <section id="Makananringan" class="content" data-aos="fadeOut">
+        <h2 class="section-title">FOR YOU</h2>
+        <div class="flash-sale">
+          <div class="flash-sale-header">
+            <h2>PRODUK KAMI</h2>
+          </div>
+          <div class="products">
+            <div class="product-item">
+              <img src="gambar/pahitan3.jpg" alt="Product 1" />
+              <p class="price">Rp 23.000</p>
+              <p class="stock">Jamu Pahitan</p>
+              <button class="add-to-cart" onclick="addToCart('Jamu Pahitan', 23000, 'Pahitan.jpg')">
+                Masukkan ke Keranjang
+              </button>
+            </div>
+            
+            <div class="product-item">
+              <img src="gambar/sirih2.jpg" alt="Product 2" />
+              <p class="price">Rp 25.000</p>
+              <p class="stock">Jamu Kunci Sirih</p>
+              <button class="add-to-cart" onclick="addToCart('Jamu Kunci Sirih', 25000, 'sirih2.jpg')">Masukkan ke Keranjang</button>
+              </div>
+            <div class="product-item">
+              <img src="gambar/brotowali.jpg" alt="Product 3" />
+              <p class="price">Rp 24.000</p>
+              <p class="stock">Brotowali</p>
+              <button class="add-to-cart" onclick="addToCart('Brotowali', 24000, 'brotowali.jpg')">Masukkan ke Keranjang</button>
+
+            </div>
+
+            <div class="product-item">
+              <img src="gambar/daunpepaya.jpg" alt="Product 10" />
+                <p class="price">Rp 22.000</p>
+              <p class="stock">Jamu Daun Pepaya</p>
+              <button class="add-to-cart" onclick="addToCart('Jamu Daun Pepaya', 22000, 'daunpepaya.jpg')">Masukkan ke Keranjang</button>
+
+          </div>
+        
+          <div class="product-item">
+            <img src="gambar/jahe.jpg" alt="Product 10" />
+              <p class="price">Rp 22.000</p>
+            <p class="stock">Jamu Jahe</p>
+            <button class="add-to-cart" onclick="addToCart('Jamu Jahe', 22000, 'jahe.jpg')">Masukkan ke Keranjang</button>
+
+        </div>
+         
+            
+        
+
+          </div>
+
+
+      </section>
+
+
+      <section id="Makananringan" class="content" data-aos="fadeOut">
+        <div class="flash-sale">
+          <div class="flash-sale-header">
+          </div>
+          <div class="products">
+            <div class="product-item1">
+              <img src="gambar/singset.jpeg" alt="Product 10" />
+                <p class="price">Rp 28.000</p>
+              <p class="stock">Jamu Galian Singset </p>
+              <button class="add-to-cart" onclick="addToCart('Jamu Galian Singset ', 28000, 'singset.jpeg')">Masukkan ke Keranjang</button>
+  
+          </div>
+  
+          <div class="product-item1">
+            <img src="gambar/kencur3.jpg" alt="Product 10" />
+              <p class="price">Rp 20.000</p>
+            <p class="stock">Jamu Beras Kencur</p>
+            <button class="add-to-cart" onclick="addToCart('Jamu Beras Kencur', 25000, 'kencur2.jpg')">Masukkan ke Keranjang</button>
+  
+        </div>
+        <div class="product-item1">
+          <img src="gambar/cengkeh.jpg" alt="Product 10" />
+            <p class="price">Rp 25.000</p>
+          <p class="stock">Jamu Cengkeh</p>
+          <button class="add-to-cart" onclick="addToCart('Jamu Cengkeh ', 25000, 'cengkeh.jpg')">Masukkan ke Keranjang</button>
+  
+      </div>
+   
+      <div class="product-item1">
+        <img src="gambar/kunyitasam1.jpg" alt="Product 10" />
+          <p class="price">Rp 22.000</p>
+        <p class="stock">Jamu Kunyit Asam</p>
+        <button class="add-to-cart" onclick="addToCart('Jamu Kunyit Asam', 22000, 'kunyitasam.jpg')">Masukkan ke Keranjang</button>
+
+    </div>
+          </div>
+        </section>
+      
+ 
+
+      
+          <!-- Toast Notification -->
+          <div id="toast" class="toast">
+            <span class="toast-icon">✅</span>
+            <span class="toast-message" id="toast-message">Produk berhasil ditambahkan ke keranjang!</span>
+            <button class="toast-close" onclick="closeToast()">✖</button>
+          </div>
+          
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../chatbot.js"></script>
+    <script>
+    function addToCart(name, price, image) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    const existingIndex = cart.findIndex(item => item.name === name);
+    if (existingIndex !== -1) {
+      cart[existingIndex].quantity += 1;
+    } else {
+      cart.push({ name, price, image, quantity: 1 });
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateCartCount();
+    showToast(`${name} telah ditambahkan ke keranjang!`);
+  }
+
+  function updateCartCount() {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let totalQuantity = cart.reduce((total, item) => total + item.quantity, 0);
+    document.getElementById("cart-count").textContent = totalQuantity;
+  }
+
+  function showToast(message) {
+  const toast = document.getElementById("toast");
+  const toastMessage = document.getElementById("toast-message");
+
+  toastMessage.textContent = message;
+  toast.classList.add("show");
+
+  // Auto hide after 3.5 seconds
+  setTimeout(() => {
+    closeToast();
+  }, 3500);
+}
+
+function closeToast() {
+  const toast = document.getElementById("toast");
+  toast.classList.remove("show");
+}
+
+
+  document.addEventListener("DOMContentLoaded", updateCartCount);
+
+  window.addEventListener("load", function() {
+    const loader = document.querySelector(".loader-wrapper");
+    if (loader) loader.style.display = "none";
+  });
+    
+      AOS.init({
+        offset: -75,
+        delay: 0,
+        duration: 1000,
+        easing: 'ease',
+        once: false,
+        mirror: false,
+        anchorPlacement: 'top-bottom'
+      });
+    
+      setInterval(nextSlide, 4000); 
+    </script>
+    
+</body>
+</html>
+
+

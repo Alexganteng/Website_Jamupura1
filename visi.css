@@ -1,0 +1,166 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #fef9f6, #f7f1ee);
+    color: #333;
+}
+
+.main2 {
+    display: flex;
+    background: linear-gradient(to right, #fef9f6, #f7f1ee);
+    padding: 40px 20px;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap; 
+    gap: 40px;
+}
+
+.content2 {
+    text-align: center;
+    padding: 50px 20px;
+    flex: 1;
+}
+
+.content2 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: 2F2F2F;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background-color: #ece2d0;
+    border: none;
+    padding: 30px;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+    /* Add these two lines */
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 120px;          /* Tentukan lebar area untuk gambar */
+    height: 60px;         /* Tentukan tinggi area untuk gambar */
+    object-fit: contain;  /* KUNCI: Ini akan membuat gambar pas tanpa menjadi gepeng */
+    align-self: center;   /* Memastikan gambar berada di tengah kartu */
+    margin-bottom: 20px;
+    z-index: 1000;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #2F2F2F;
+    z-index: 1000; 
+
+}
+
+.card p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #2F2F2F	;
+    z-index: 1000; 
+
+}
+
+.card button {
+    background-color: #89a867	;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 1000; 
+}
+
+
+.card button:hover {
+    background-color: #9caf8886;
+    transform: scale(1.05);
+    z-index: 1000; 
+
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .content2 h1 {
+        font-size: 2rem; 
+    }
+    .cards {
+        gap: 15px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .card {
+        max-width: 300px; }
+    .content2 h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main2 {
+        padding: 20px 10px; 
+    }
+
+    .cards {
+        gap: 10px;
+        padding: 10px; 
+    }
+
+    .card {
+        padding: 20px;
+        max-width: 100%; 
+    }
+
+    .card img {
+        height: 50px; /* Kurangi ukuran gambar pada layar kecil */
+    }
+
+    .content2 h1 {
+        font-size: 1.5rem; /* Kurangi ukuran teks pada layar kecil */
+    }
+
+    .card button {
+        padding: 10px 20px; /* Kurangi padding pada tombol */
+        font-size: 0.9em; /* Kurangi ukuran font tombol */
+    }
+}
+/* Add this new rule below the .card style */
+.card a {
+    margin-top: auto;
+}

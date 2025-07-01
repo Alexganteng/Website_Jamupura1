@@ -1,0 +1,177 @@
+.banner10 {
+    position: relative;
+    width: 99.1vw; 
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.banner10 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slideshow-manual {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300%;
+    height: 100%;
+}
+
+.slide2 {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+
+
+@media (max-width: 1024px) {
+    .banner10 {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .nav-button {
+        display: none; /* Sembunyikan tombol navigasi */
+    }
+
+    .slideshow-manual {
+        width: 100%;
+        height: 100%;
+    }
+
+    .slide2 {
+        background-size: cover;
+        background-position: center;
+    }
+
+
+}
+
+/* Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+    .banner10 {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .slideshow-manual {
+        width: 100%;
+        height: 100%;
+    }
+
+    .slide2 {
+        background-size: cover;
+        background-position: center;
+    }
+
+}
+
+
+
+
+@media (max-width: 768px) {
+    .banner10 {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .slideshow-manual {
+        width: 100%;
+        height: 100%;
+    }
+
+    .slide2 {
+        background-size: cover;
+        background-position: center;
+    }
+
+
+}
+
+/* Small Mobile (max-width: 576px) */
+@media (max-width: 576px) {
+    .banner10 {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .slideshow-manual {
+        width: 100%;
+        height: 100%;
+    }
+
+    .slide2 {
+        background-size: cover;
+        background-position: center;
+    }
+
+  
+}
+
+/* Extra Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .banner10 {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .slideshow-manual {
+        width: 100%;
+        height: 100%;
+    }
+
+    .slide2 {
+        background-size: cover;
+        background-position: center;
+    }
+
+
+}

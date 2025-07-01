@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamupura</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="produk.css">
+    <link rel="stylesheet" href="visi.css">
+    <link rel="stylesheet" href="mitra.css">
+    <link rel="stylesheet" href="alex.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="slidemanual.css">
+    <link rel="stylesheet" href="slidesauto.css">
+    <link rel="stylesheet" href="hubungi.css">
+  
+</head>
+<body>
+    <header>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <div class="text" data-aos="fadeOut">
+            <h1>Jamupura</h1>
+        </div>
+        <nav>
+            <ul id="menu-list">
+                <li><a href="#varian">Beranda</a></li>
+                <li><a href="#mitrakami">Mitra Kami</a></li>
+                <li><a href="#keberlanjutan">Keberlanjutan</a></li>
+                <li><a href="#product">Produk</a></li>
+                <li><a href="#contact">Hubungi Kami</a></li>
+                <li><a href="produk/produk1.html"><i class="fa-solid fa-shop"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <!---chat bot-->
+
+
+    <div id="logoContainer">
+        <img src="logo3.jpg" alt="Chatbot Logo" id="chatLogo" />
+      </div>
+  
+      <!-- Chatbox yang disembunyikan secara default -->
+      <div class="chat-box" id="chatBox"></div>
+  
+      <div class="chat-container">
+        <div class="chat-input hidden" id="chatInput">
+          <input id="userInput" placeholder="Tuliskan Pesan" type="text" />
+          <div class="send-button" onclick="sendMessage()">
+            <i class="fas fa-paper-plane"></i>
+          </div>
+        </div>
+      </div>
+
+    <!---background foto-->
+    <section id="varian" class="banner10" data-aos="fadeOut">
+        <button id="prev" class="nav-button">❮</button>
+    
+        
+        
+        <div class="slideshow-manual">
+            <div class="slide2" style="background-image: url('BG1.jpg');"></div>
+            <div class="slide2" style="background-image: url('BG2.jpg');"></div>
+        </d iv>
+        
+        <button id="next" class="nav-button">❯</button>
+    </section>
+    
+
+          <!--- mitra kami-->
+
+
+      <div class="main1"  id="mitrakami">
+        <div class="content1" data-aos="fade-up">
+         <h2>
+          Mitra Kami
+         </h2>
+         <p>
+            Kami juga memastikan bahwa setiap bahan yang kami gunakan diproses dengan metode yang menjaga kualitas alami dan nutrisinya. Dengan demikian, produk kami tidak hanya lezat tetapi juga mendukung gaya hidup sehat.         </p>
+         <p>
+            Selain itu, kami berkomitmen untuk menjaga kelestarian lingkungan dengan meminimalkan limbah produksi dan menggunakan kemasan yang ramah lingkungan. Melalui setiap langkah ini, kami berharap dapat memberikan kontribusi positif bagi masyarakat, lingkungan, dan kesehatan konsumen kami.         </p>
+         
+            <p>
+                Kepuasan pelanggan adalah prioritas utama kami. Oleh karena itu, kami selalu terbuka terhadap umpan balik untuk terus meningkatkan kualitas produk dan layanan yang kami tawarkan. Kami percaya bahwa dengan kerja sama yang baik antara konsumen, petani, dan tim produksi kami, kita bisa menciptakan ekosistem yang mendukung kesejahteraan bersama.
+
+            </p>
+         
+            <a href="https://id.wikipedia.org/wiki/Pertanian_dan_perkebunan_di_Indonesia">
+           <button class="button">Selengkapnya ➞</button>
+         </a>
+        </div>
+        <div class="image-container" data-aos="fadeOut">
+         <img alt="Two farmers in a field holding harvested crops" height="600" src="petani.jpg" width="800"/>
+         <div class="carousel-indicators">
+          <span class="active">
+          </span>
+          <span>
+          </span>
+          <span>
+          </span>
+          <span>
+          </span>
+          <span>
+          </span>
+         </div>
+        </div>
+      </div>
+      
+    <!-- Visi Misi -->
+      <div class="main2" id="keberlanjutan" data-aos="fade-up">
+      <div class="content2">
+        <h1>KEBERLANJUTAN</h1>
+        <div class="cards">
+            <div class="card">
+                <img src="kesehatan.png" alt="Bisnis yang Inklusif Icon">
+                <h2>Manfaat Kesehatan</h2>
+                <p>Warga yang rutin mengonsumsi jamu alami melaporkan peningkatan kesehatan dan energi. Bahan-bahan alami seperti jahe dan temulawak sering digunakan untuk mengatasi masalah pencernaan, mengurangi peradangan, dan meningkatkan daya tahan tubuh.</p>
+                <a href="https://sehatnegeriku.kemkes.go.id/baca/rilis-media/20210527/4737841/konsumsi-jamu-jadi-upaya-promotif-preventif-ini-manfaatnya/#:~:text=Beberapa%20manfaat%20yang%20didapatkan%20jika,dan%20meningkatkan%20kualitas%20kesehatan%20masyarakat.">
+                    <button>Selengkapnya</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="ekonomi.png" alt="Kesejahteraan Pegawai Icon">
+                <h2>Pemberdayaan Ekonomi</h2>
+                <p>Warga sekitar yang terlibat dalam penanaman dan produksi jamu mendapatkan manfaat ekonomi. Mereka dapat memanfaatkan lahan pertanian yang terbatas untuk menanam tanaman herbal yang bernilai tinggi.</p>
+                <a href="https://ekon.go.id/publikasi/detail/493/konsumsi-jamu-meningkat-pemerintah-berdayakan-umkm-dengan-pendekatan-klaster-obat-tradisional">
+                    <button>Selengkapnya</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="budaya.png" alt="Produk Berintegritas Icon">
+                <h2>Pelestarian Budaya</h2>
+                <p>Meminum jamu juga menjaga keberlanjutan budaya lokal. Tradisi turun-temurun dalam meracik jamu tetap hidup, dan pengetahuan ini diwariskan kepada generasi muda.</p>
+                <a href="https://www.alodokter.com/ini-lho-manfaat-jamu-yang-sudah-teruji-klinis">
+                    <button>Selengkapnya</button>
+                </a>
+            </div>
+            
+            <div class="card">
+                <img src="kehidupan.png" alt="Pengadaan Berkelanjutan Icon">
+                <h2>Peningkatan Kualitas Hidup </h2>
+                <p>Dengan adanya usaha produksi jamu dan manfaat kesehatannya, kualitas hidup masyarakat sekitar meningkat. Mereka tidak hanya lebih sehat, tetapi juga memiliki sumber pendapatan tambahan yang dapat digunakan untuk memenuhi kebutuhan dasar, seperti pendidikan dan kesehatan.</p>
+                <a href="https://ayosehat.kemkes.go.id/sehat-dengan-jamu-ayo-minum-jamu">
+                    <button>Selengkapnya</button>
+                </a>            
+            </div>
+        </div>
+    </div>
+    </div>
+
+<!-- Tampilan produk -->
+<div class="main3" data-aos="fade-up" id="product">
+    <div class="container1">
+      <div class="product-header">REKOMENDASI PRODUK KAMI</div>
+  
+      <div class="product-section1" id="product-section">
+        <div class="product-image1" id="product-image">
+          <img src="produk/gambar/kencur3.jpg" alt="Beras Kencur Image" id="main-image" />
+        </div>
+        <div class="product-content1">
+          <div class="product-title1" id="product-title">Beras Kencur</div>
+          <div class="product-description1" id="product-description">
+            Minuman energi varian Beras Kencur dengan kandungan alami.
+          </div>
+          <button class="button">Selengkapnya</button>
+        </div>
+      </div>
+  
+      <!-- Carousel -->
+      <div class="carousel" data-aos="fade-up">
+        <div class="arrow" id="sebelum">
+          <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="items-wrapper">
+          <div class="items" id="carousel-items">
+            <div class="item active" data-title="Beras Kencur" data-description="Segarkan badan dan kembalikan energi dengan Jamu Beras Kencur! Cocok untuk meningkatkan stamina, menghilangkan pegal, dan menambah nafsu makan."
+            data-image="produk/gambar/kencur3.jpg">
+              <img src="produk/gambar/kencur3.jpg" alt="Jamu Beras Kencur">
+              <p>Beras Kencur</p>
+            </div>
+            <div class="item" data-title="Jamu Jahe" data-description="Hangatkan tubuh dan kuatkan imun dengan Jamu Jahe murni! Nikmati kehangatan alami untuk kesehatan harianmu."
+            data-image="produk/gambar/jahe.jpg" >
+              <img src="produk/gambar/jahe.jpg"  alt="Jamu Jahe">
+              <p>Jahe</p>
+            </div>
+            <div class="item" data-title="Jamu Daun Pepaya" data-description="Bangkitkan nafsu makan dan segarkan tubuh dengan Jamu Daun Pepaya! Pahitnya alami, manfaatnya luar biasa untuk pencernaan dan energi."
+            data-image="produk/gambar/daunpepaya.jpg" >
+              <img src="produk/gambar/daunpepaya.jpg" alt="Daun Pepaya">
+              <p>Daun Pepaya</p>
+            </div>
+            <div class="item" data-title="Jamu Kunyit Asam  " data-description="Segar, sehat, dan penuh manfaat! Jamu Kunyit Asam bantu melancarkan haid, cerahkan kulit, dan lawan radikal bebas dengan rasa yang nikmat." 
+            data-image="produk/gambar/kunyitasam1.jpg" >
+                <img src="produk/gambar/kunyitasam1.jpg" alt="Kunyit Asam">
+                <p>Kunyit Asam</p>
+              </div>
+              
+              <div class="item" data-title="Jamu Pahitan" data-description="Detoks alami tubuhmu dengan Jamu Pahitan! Bantu bersihkan darah kotor, lawan jerawat dari dalam, dan jaga gula darah tetap stabil."
+              data-image="produk/gambar/pahitan3.jpg">
+                <img src="produk/gambar/pahitan3.jpg" alt="Pahitan">
+                <p>Pahitan</p>
+              </div>
+
+              
+                       </div>
+        </div>
+        <div class="arrow" id="lanjut">
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+    
+    <!-- otomatis -->
+    <section id="varian" class="banner1" data-aos="fadeOut">
+        <div class="slideshow-auto"> 
+            <div class="slide" style="background-image: url('slideauto/jamu\ 1.webp');"></div>
+            <div class="slide" style="background-image: url('slideauto/jamu\ 2.jpg');"></div>
+            <div class="slide" style="background-image: url('slideauto/jamu3.jpg');"></div>
+            <div class="slide" style="background-image: url('slideauto/jamu4.jpg');"></div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Keterangan -->
+    <div class="container5" id="contact">
+        <div class="header5">
+            <hr>
+            <h1>Jamu Pura</h1>
+            <hr>
+        </div>
+        <div class="content5">
+            <div class="left5">
+                <h2></h2>
+                <div class="stock-info5">
+                    <hr>
+                    <span>Yang kami inginkan</span>
+                    <p>Selamat datang di website Jamu Pura, perusahaan yang berdedikasi dalam menghadirkan solusi inovatif di bidang Herbal Tradisional. </p>
+                    <p>Kami percaya bahwa dengan komitmen terhadap kualitas, kreativitas, dan kepuasan pelanggan, kami dapat memberikan kontribusi nyata dalam menghadapi tantangan industri saat ini. Jamu Pura, mari ciptakan masa depan yang lebih cerah dan berkelanjutan.</p>
+                    
+                </div>
+                <div class="stock-price5 flex items-center space-x-1 text-green-500 font-bold">
+                    18
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <a href="#" class="more-info5"></a>
+            </div>
+            <div class="right5">
+                <div class="announcement5">
+                    <h2>Berita & Informasi Resmi Perusahaan
+                    </h2>
+
+                    <p>17 Maret 2025
+                    </p>
+                      
+                      <p>📈 Perubahan Kepemilikan Saham
+                        Memperkuat struktur kepemilikan untuk mendukung pertumbuhan strategis dan memperluas pasar domestik dan internasional.
+                        </p>
+                        <p>
+                          🔄 Rencana Pembelian Kembali Saham
+                          Memberikan nilai tambah kepada para pemegang saham sebagai bentuk apresiasi atas kepercayaan yang diberikan kepada perusahaan kami.</p>
+                      </div>
+                <div class="update5">
+                  <h2>Sorotan Kinerja dan Perkembangan Terbaru                  </h2>
+               
+                  <p>07 Maret 2025
+                  </p>
+                  <p>
+                    🚀 Kinerja Cemerlang 2024
+                    Pertumbuhan volume penjualan meningkat sebesar 18%, didorong oleh inovasi produk baru dan ekspansi pasar strategis di Asia.
+                    </p>
+                  <p>24 Okt 2024</p>
+                    <p>🌿 Pertumbuhan Berkelanjutan
+                      Fokus pada diversifikasi produk dan investasi berkelanjutan menghasilkan peningkatan pendapatan sebesar 12% selama sembilan bulan pertama tahun ini.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script src="produk.js"></script>
+
+  <script src="all.js"></script>
+  <script src="chatbot.js"></script>
+
+
+  <script>
+
+window.addEventListener("load", function() {
+    document.querySelector(".loader-wrapper").style.display = "none";   
+});
+
+AOS.init({
+    offset: -75,
+    delay: 0,
+    duration: 1000,
+    easing: 'ease',
+    once: false,
+    mirror: false,
+    anchorPlacement: 'top-bottom'
+});
+
+      function toggleMenu() {
+    const nav = document.getElementById('menu-list');
+    nav.classList.toggle('active');
+}
+
+  </script>
+
+
+</body>
+</html>

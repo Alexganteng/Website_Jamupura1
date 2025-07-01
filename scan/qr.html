@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembayaran via QRIS</title>
+  <link rel="stylesheet" href="qr.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container" data-aos="fadeOut">
+    <div class="card" data-aos="fadeOut">
+      <img src="logo1.jpg" alt="Teh Daun Kelor" class="product-img">
+      <h1 class="title">Pembayaran QRIS</h1>
+      <p class="description">Minuman herbal alami yang menyehatkan dan menyegarkan tubuh.</p>
+
+      <div class="info">
+        <p><strong>Harga:</strong> Rp<span id="total-price">0</span></p>
+        <p><strong>Item:</strong> <span id="item-list"></span></p>
+        <p><strong>Metode:</strong> Pembayaran via QRIS</p>
+      </div>
+
+      <div id="qris" class="qris-box"></div>
+      <p class="note">Scan QR menggunakan aplikasi seperti OVO, DANA, ShopeePay, atau GoPay.</p>
+
+      <button onclick="alert('Terima kasih atas pembayarannya!')" class="btn-bayar">
+        Saya Sudah Bayar
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // Mengambil data dari URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const total = urlParams.get('total');
+    const items = urlParams.get('items');
+
+    // Menampilkan total dan item di halaman QRIS
+    document.getElementById('total-price').textContent = total;
+    document.getElementById('item-list').textContent = items;
+
+    // Data QRIS untuk pembayaran
+    const qrisData = `00020101021226680014ID.LINKAJA.WWW01189360091800000001234580203ID5912Herbal Kelor6013Jakarta Selatan61051234562200703A16`;
+
+    new QRCode(document.getElementById("qris"), {
+      text: qrisData,
+      width: 180,
+      height: 180
+    });
+  </script>
+</body>
+</html>

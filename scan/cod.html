@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pembayaran COD</title>
+  <link rel="stylesheet" href="cod.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="cod-icon">
+      <i class="fas fa-truck-moving"></i>
+    </div>
+
+    <img src="logo1.jpg" alt="Produk Herbal" class="product-img">
+
+    <h1 class="title">Pembayaran COD</h1>
+    <p class="description">Minuman herbal alami yang menyehatkan dan menyegarkan tubuh Anda.</p>
+
+    <div class="info-card">
+      <p><strong>Harga:</strong> Rp<span id="total-price">0</span></p>
+      <p><strong>Item:</strong> <span id="item-list"></span></p>
+      <p><strong>Metode:</strong> Bayar di tempat </p>
+    </div>
+
+    <div class="queue-card">
+      <p><strong>Nomor Antrian Anda:</strong></p>
+      <h2 id="nomor-antrian" class="queue-number">0</h2>
+      <p class="small-note">Tunjukkan nomor ini saat di panggil kasir.</p>
+    </div>
+
+    <p class="description">Mohon siapkan uang tunai. Kasir akan memanggil anda.</p>
+
+    <button class="btn-bayar" onclick="alert('Pesanan Anda dikonfirmasi. Terima kasih!')">
+      Konfirmasi Pesanan
+    </button>
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const total = urlParams.get('total');
+    const items = urlParams.get('items');
+    const queue = urlParams.get('antrian') || Math.floor(Math.random() * 9 + 1);
+
+    document.getElementById('total-price').textContent = total || '0';
+    document.getElementById('item-list').textContent = items || 'Tidak ada';
+    document.getElementById('nomor-antrian').textContent = `${queue}`;
+  </script>
+</body>
+</html>

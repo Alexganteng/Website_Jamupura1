@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #fef9f6, #f7f1ee);
+    color: #333;
+}
+
+.container5 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.header5 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.header5 h1 {
+    font-size: 24px;
+    color: #2F2F2F;
+    
+    margin: 0;
+}
+.header5 hr {
+    border: 0;
+    border-top: 1px solid #2F2F2F;
+    margin: 10px 0;
+}
+.content5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.left5, .right5 {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+}
+.left5 {
+    background-color: #ece2d0;
+    padding: 20px;
+}
+.left5 h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+.left5 .stock-info5 {
+    font-size: 16px;
+    color: #333;
+    margin: 15px 0;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.6); /* Warna putih dengan transparansi 60% */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    backdrop-filter: blur(10px); /* Efek blur untuk transparansi yang lebih halus */
+    transition: all 0.3s ease; /* Animasi smooth saat hover */
+}
+
+
+.left5 .stock-info5:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Saat hover, tingkatkan opacity */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan saat hover */
+}
+
+.left5 .stock-info5 hr {
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+    margin: 15px 0;
+}
+
+.left5 .stock-info5 span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2F2F2F;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.left5 .stock-info5 p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.left5 .stock-price5 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.left5 .stock-price5 i {
+    font-size: 24px;
+    color: #2F2F2F;
+}
+.left5 .more-info5 {
+    font-size: 14px;
+    color: #2F2F2F;
+    text-decoration: none;
+}
+.right5 h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+.right5 .announcement5, .right5 .update5 {
+    margin: 20px 0;
+}
+.right5 .announcement5 h3, .right5 .update5 h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+.right5 .announcement5 p, .right5 .update5 p {
+    font-size: 14px;
+    color: #2F2F2F;
+    margin: 5px 0;
+}
+.right5 .update5 p {
+    font-weight: bold;
+    color: 2F2F2F;
+}
+@media (max-width: 1200px) {
+    .container5 {
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content5 {
+        flex-direction: column;
+    }
+
+    .left5, .right5 {
+        min-width: 100%;
+        margin: 10px 0;
+    }
+
+    .left5 .stock-price5 {
+        font-size: 36px;
+    }
+
+    .left5 h2, .right5 h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container5 {
+        padding: 10px;
+    }
+
+    .left5 .stock-price5 {
+        font-size: 28px;
+    }
+
+    .left5 h2, .right5 h2 {
+        font-size: 16px;
+    }
+
+    .left5 .stock-info5 {
+        font-size: 14px;
+    }
+
+    .right5 .announcement5 h3, .right5 .update5 h3 {
+        font-size: 16px;
+    }
+}
